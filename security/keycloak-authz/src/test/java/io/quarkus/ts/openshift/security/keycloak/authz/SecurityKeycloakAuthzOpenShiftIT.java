@@ -24,10 +24,11 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.List;
-
+import org.junit.jupiter.api.Disabled;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
+@Disabled("Caused by https://github.com/quarkusio/quarkus/issues/14318")
 @OpenShiftTest
 @AdditionalResources("classpath:keycloak-realm.yaml")
 @AdditionalResources("classpath:keycloak.yaml")
